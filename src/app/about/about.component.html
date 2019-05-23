@@ -1,0 +1,27 @@
+<div class="main">
+  <div class="leftBlock">
+    <br>
+    <p>Наші роботи:</p>
+    <div class="img">
+      <img src="../../assets/pictures/4.jpg">
+      <img src="../../assets/pictures/5.jpg">
+      <img src="../../assets/pictures/6.jpg">
+      <img src="../../assets/pictures/7.jpg">
+      <img src="../../assets/pictures/8.jpg">
+    </div>
+  </div>
+
+  <div class="rightBlock">
+    <br>
+    <p>Відгуки:</p>
+    <ul>
+      <li *ngFor="let item of feedbacks">
+        {{ item.name }}
+        <br>
+        {{ item.message }}
+      </li>
+
+    </ul>
+
+  </div>
+</div>

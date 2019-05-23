@@ -1,0 +1,59 @@
+<br>
+
+<div class="main">
+  <div class="leftBlock">
+
+    <div class="block">
+
+      <a>Зворотній зв'язок</a>
+      <br>
+      <br>
+      <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+        <h5 *ngIf="success">Дякуємо за Ваш відгук</h5>
+        <label>
+          Ім'я:
+          <input type="text" formControlName="name">
+          <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
+            <div *ngIf="messageForm.controls.name.errors.required"> Будь-ласка заповніть форму</div>
+          </div>
+        </label>
+
+
+        <label>
+          Як нас знайти:
+          <textarea formControlName="message"></textarea>
+          <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
+            <div *ngIf="messageForm.controls.message.errors.required"> Будь-ласка заповніть форму</div>
+          </div>
+        </label>
+
+
+        <input type="submit" value="Відправити" class="cta">
+      </form>
+
+      <!-- <div *ngIf="submitted" class="results">
+        <strong>Ім'я:</strong>
+        <span>{{ messageForm.controls.name.value}}</span>
+
+        <strong>Відгук:</strong>
+        <span>{{ messageForm.controls.message.value}}</span>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="rightBlock">
+    <p>Карта:</p>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d330676.0454022833!2d24.08899888046238!3d49.64663757217161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1557858090048!5m2!1sen!2sua"
+      width="500" height="450" frameborder="1" style="border:0" allowfullscreen></iframe>
+    <br>
+    <br>
+    <p class="text">
+      COPYRIGHT@
+      Адреса:
+      Україна, м.Львів
+      вул. С.Бандери 88 (098)76 678 77</p>
+  </div>
+
+</div>

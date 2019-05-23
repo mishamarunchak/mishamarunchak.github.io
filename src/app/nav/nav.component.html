@@ -1,0 +1,12 @@
+<header>
+  <div class="container">
+    <a routerLink="/" > <img src="../../assets/pictures/logo.png" class="logo"></a>
+    <nav>
+      <ul>
+        <li><a routerLink="/" [class.active-link]="currentPage === 'home'">Головна</a></li>
+        <li><a routerLink="/about" [class.active-link]="currentPage === 'about'">Наші роботи</a></li>
+        <li><a routerLink="/contact" [class.active-link]="currentPage === 'contact'">Контакти</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

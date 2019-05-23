@@ -1,0 +1,91 @@
+.active-link{
+    color: yellowgreen;
+}
+
+.block {
+    width: 700px;
+    margin-left: 20px;
+}
+
+.main{
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+}
+
+.leftBlock{
+    width: 500px;
+    height: 500px;
+    // background-color: aquamarine;
+}
+.rightBlock{
+    width: 500px;
+    height: 500px;
+    // background-color: grey;
+}
+
+label {
+    display: block;
+
+    input, textarea {
+        display: block;
+        width: 40%;
+        margin-bottom: 20px;
+        padding: 1em;
+    }
+
+    .error {
+        margin-top: -20px;
+        color: red;
+        padding: 0.5em;
+        display: inline-block;
+        font-size: .9em;
+        margin-bottom: 20px;
+    }
+}
+
+.cta {
+    width: 90px;
+    height: 40px;
+    background: green;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 1em;
+    cursor: pointer;
+    font-size: 11px;
+    }
+
+.results {
+    margin-top: 40px;
+    strong {
+        display: block;
+    }
+    span {
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+h1 {
+    
+    font-size: 20px;
+}
+
+.contactData {
+    width: 800px;
+    margin-top: -80px;
+    text-align: center;
+    font-size: 12px;
+}
+.text{
+    
+    font-size: 11px;
+    text-align: center;
+    margin-top: 80px;
+
+}

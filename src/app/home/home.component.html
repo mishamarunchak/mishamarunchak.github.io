@@ -1,0 +1,52 @@
+<div class="main">
+  <div class="leftContainer">
+    <ul>
+      <!-- <ng-container> -->
+      <li *ngFor="let item of menuItems" (mouseenter)="show(item.description)" (mouseleave)="hide()">
+        {{ item.name }}
+      </li>
+      <!-- </ng-container> -->
+    </ul>
+    <div [ngClass]="{'description': isPreviewShow }">
+      {{ description }}
+    </div>
+  </div>
+
+  <div class="rightContainer">
+    <ngb-carousel *ngIf="images">
+      <ng-template ngbSlide>
+        <img src="../../assets/pictures/1.jpg" alt="Random first slide">
+        <div class="carousel-caption">
+          <h3>Полірування кузова</h3>
+          <p>JAGUAR XR</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="../../assets/pictures/2.jpg" alt="Random second slide">
+        <div class="carousel-caption">
+          <h3>Поклейка плівки</h3>
+          <p>BMW 5</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="../../assets/pictures/3.jpg" alt="Random third slide">
+        <div class="carousel-caption">
+          <h3>Фарбування кузова</h3>
+          <p>BMW 5</p>
+        </div>
+      </ng-template>
+      <hr>
+    </ngb-carousel>
+    <br>
+    <br>
+    <div class="contactData">
+      <a>
+        COPYRIGHT@
+        Адреса:
+        Україна, м.Львів
+        вул. С.Бандери 88 (098)76 678 77</a></div>
+
+
+
+  </div>
+</div>
